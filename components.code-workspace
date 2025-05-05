@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../Youtobe proekt/components"
+		},
+		{
+			"path": "../Youtobe proekt/constants"
+		},
+		{
+			"path": "../Youtobe proekt/css"
+		},
+		{
+			"path": "../Youtobe proekt/img"
+		},
+		{
+			"path": "../Youtobe proekt/utils"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "components"
+	}
+}

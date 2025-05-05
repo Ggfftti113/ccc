@@ -1,0 +1,36 @@
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.wrapper {
+    text-align: center; 
+}
+
+h2 {
+    color: white;
+    background-color: green;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+strong {
+    font-size: 28px;
+    color: yellow;
+    padding: 10px;
+}
+
+h1 {
+    color: black;
+    background-color: burlywood;
+}
+
+a {
+    color: white;
+    background-color: green;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}

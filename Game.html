@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Угадай число</title>
+  <link rel="stylesheet" href="./Game.css">
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body style="background-color: black; color: yellow;" >
+  <h1>Угадай число!</h1>
+  <p>Введите ваш вариант:</p>
+  <input type="text" id="guessInput">
+  <button onclick="checkGuess()">Проверить</button>
+  <p id="message"></p>
+
+  <script>
+    // Генерация случайного числа от 1 до 10
+    const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+    let attempts = 0;
+
+    function checkGuess() {
+      const guess = document.getElementById('guessInput').value;
+      const message = document.getElementById('message');
+
+      if (isNaN(guess) || guess < 1 || guess > 10) {
+        message.textContent = 'Введите число от 1 до 10';
+      } else {
+        attempts++;
+
+        if (parseInt(guess) === secretNumber) {
+          message.textContent = `Поздравляю! Вы угадали число ${secretNumber} за ${attempts} попыток.`;
+        } else {
+          message.textContent = 'Неправильно, попробуйте еще раз.';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
